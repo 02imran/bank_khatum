@@ -1,0 +1,85 @@
+
+
+
+
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:wallet_merchant/constants.dart';
+import 'package:wallet_merchant/model/response/get_profile_data_response/GetProfileResponseModel.dart';
+import 'package:wallet_merchant/screen/update_customer/controller/update_customer_controller.dart';
+
+import '../../../size_config.dart';
+
+class UpdateCustomerDistrict extends GetView<UpdateCustomerController> {
+  const UpdateCustomerDistrict({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Obx(() =>
+        DropdownButtonHideUnderline(
+          child: DropdownButtonFormField(
+            isExpanded: true,
+            hint: const Text('Select Your District',
+                style: TextStyle(fontSize: 14, color: kTextColor)),
+            // icon: const Icon(Icons.arrow_drop_down),
+            decoration: InputDecoration(
+              counterText: "",
+              // labelText: "First Name",
+              hintStyle: const TextStyle(color: Colors.black),
+              labelStyle: const TextStyle(color: Colors.black),
+              hintText: "Enter Your Document Number",
+              floatingLabelBehavior: FloatingLabelBehavior.always,
+              isDense: true,
+              contentPadding: const EdgeInsets.fromLTRB(15, 20, 30, 0),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5.0),
+                borderSide: const BorderSide(
+                  color: Colors.black,
+                  width: 1.0,
+                ),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5.0),
+                borderSide: const BorderSide(
+                  color: Colors.black,
+                ),
+              ),
+              errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5.0),
+                borderSide: const BorderSide(
+                  color: Colors.red,
+                ),
+              ),
+              focusedErrorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5.0),
+                borderSide: const BorderSide(
+                  color: Colors.red,
+                ),
+              ),
+            ),
+            value: controller.chooseCity.value.cityId != null
+                ? controller.chooseCity.value
+                : controller.filterDistrictList[0],
+            items: controller.filterDistrictList.value
+                .map((division) {
+              return DropdownMenuItem<DistrictList>(
+                value: division,
+                child: Text(division.districtEnglishName.toString(),
+                    style: const TextStyle(
+                        fontSize: 14, color: kTextColor)),
+              );
+            }).toList(),
+            validator: (value) {
+              if (value == null) return "District is required";
+              return null;
+            },
+            onChanged: (value) {
+              controller.chooseDistrict.value = value as DistrictList;
+
+
+
+            },
+          ),
+        ));
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "112790464595",
+    "project_id": "mlajan-wallet",
+    "storage_bucket": "mlajan-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112790464595:android:a62ec8c739fbd0db14fea6",
+        "android_client_info": {
+          "package_name": "com.mlajan.merchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112790464595-5gi5s5cl1g19krbqpa559bcasqb6kb9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlajan.merchant",
+            "certificate_hash": "2604a3bb5cc81a5b27a90f91a99907d66f533c36"
+          }
+        },
+        {
+          "client_id": "112790464595-c41knkjq73t1afco2b1uua5ij8uchgft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlajan.merchant",
+            "certificate_hash": "5fc3e1096a96e1ad8c537f26802c3a0ec0bb1f73"
+          }
+        },
+        {
+          "client_id": "112790464595-12rkt5p7dpfeqnikqo2pu4rqqcf1r5gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-wTXV6aguhZVAvRpOBebS-R8G_X2IKd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112790464595-12rkt5p7dpfeqnikqo2pu4rqqcf1r5gn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "112790464595-gg1jfubfnpkiv5snpoe3ls26moqvklbr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dominica.appmlajan"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112790464595:android:bf9a55c7b6c9a2dd14fea6",
+        "android_client_info": {
+          "package_name": "com.mlajan.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112790464595-ai7t2sirpie68qgjev4uiijjl9unem1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlajan.wallet",
+            "certificate_hash": "cbb27e00ecec96ca41f2fbe7697bb063789a9f0c"
+          }
+        },
+        {
+          "client_id": "112790464595-ih440vhsbaf6al35r57g9dhme15no4us.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlajan.wallet",
+            "certificate_hash": "371d3c287edfb7959e8b94abbe5b440c93cce588"
+          }
+        },
+        {
+          "client_id": "112790464595-pj7l7raggseqc028sgrtf97gqq47crki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlajan.wallet",
+            "certificate_hash": "87d7db55767fd0da14534182187f715a4bb0a62d"
+          }
+        },
+        {
+          "client_id": "112790464595-12rkt5p7dpfeqnikqo2pu4rqqcf1r5gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-wTXV6aguhZVAvRpOBebS-R8G_X2IKd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112790464595-12rkt5p7dpfeqnikqo2pu4rqqcf1r5gn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "112790464595-gg1jfubfnpkiv5snpoe3ls26moqvklbr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dominica.appmlajan"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
